@@ -1,1 +1,49 @@
+Kotlin language:Android apps are written in the Kotlin programming language. Kotlin is a modern language created to help developers write code efficiently and with as few errors as possible.
 
+-Prerequisites
+Use interactive websites in your web browser.
+
+-What you'll learn
+How to create, change, understand, and run a minimal Kotlin program that displays a message.
+
+-What you'll build
+A program in the Kotlin programming language that displays a message when you run it.
+
+-What you need
+A computer with a modern web browser, such as the latest version of Chrome.
+Internet access on your compute
+
+########################################################################
+2. Run your first program in Kotlin
+
+In this task, you will use an editor on a website to start programming in the Kotlin language right away.
+-Use an interactive code editor
+
+Instead of installing software on your computer, you can use a web-based tool to create your first program.
+In your browser, open -" https://developer.android.com/training/kotlinplayground ". This opens a browser-based programming tool.
+You should see a page similar to the screenshot below, with a code editor in the middle. 
+
+![Screenshot 2022-08-12 at 19-37-06 Student Dashboard](https://user-images.githubusercontent.com/91931504/184494506-09334fb0-b4b5-4068-8965-14917e0bd659.png)
+
+
+
+
+-This is the program code in the editor:
+
+fun main() {
+    println("Hello, world!")
+}
+
+-Run the program code
+
+Running a program that you created is not much different than running a program such as a word processor on your computer. The difference is that when you run a program to accomplish a task, or play a game, you primarily care about what the program can do for you, and you don't concern yourself with the code that makes it work. When you are programming, you get to see and work with the actual code that makes the magic happen.
+
+
+    In the editor, in the top-right corner, find the white or green triangle 3384088a105a0da9.png and click it to run the program.
+    Look at the pane at the bottom.
+
+Hello, world!
+
+    Notice Hello, world! printed, like in the image above. So now you know what this program does: It prints, or outputs, a hello world message.
+
+Compilation is a process that translates the Kotlin program code into a form that the system can run. If compilation completes successfully, there are no errors in the program that would keep it from running. If there are problems, they will appear in pane at the bottom.
