@@ -1,4 +1,4 @@
-Kotlin language:Android apps are written in the Kotlin programming language. Kotlin is a modern language created to help developers write code efficiently and with as few errors as possible.
+1.Kotlin language:Android apps are written in the Kotlin programming language. Kotlin is a modern language created to help developers write code efficiently and with as few errors as possible.
 
 -Prerequisites
 Use interactive websites in your web browser.
@@ -13,8 +13,9 @@ A program in the Kotlin programming language that displays a message when you ru
 A computer with a modern web browser, such as the latest version of Chrome.
 Internet access on your compute
 
-########################################################################
+------------------------------------
 2. Run your first program in Kotlin
+------------------------------------
 
 In this task, you will use an editor on a website to start programming in the Kotlin language right away.
 -Use an interactive code editor
@@ -38,9 +39,153 @@ fun main() {
 -Run the program code
 
 Running a program that you created is not much different than running a program such as a word processor on your computer. The difference is that when you run a program to accomplish a task, or play a game, you primarily care about what the program can do for you, and you don't concern yourself with the code that makes it work. When you are programming, you get to see and work with the actual code that makes the magic happen.
-In the editor, in the top-right corner, find the white or green triangle 3384088a105a0da9.png and click it to run the program.
+In the editor, in the top-right corner, find the white or green triangle and click it to run the program.
 Look at the pane at the bottom.
 
 Hello, world!
 
 -Compilation is a process that translates the Kotlin program code into a form that the system can run. If compilation completes successfully, there are no errors in the program that would keep it from running. If there are problems, they will appear in pane at the bottom.
+
+-----------------------
+3. Modify your program
+-----------------------
+Understand the parts of the program
+
+Now, take a look at the code. Each piece of this program serves a specific purpose, and you need all the pieces in order to be able to run the program. Let's start with the first word.
+
+fun:fun is a word in the Kotlin programming language. fun stands for function. A function is a section of a program that performs a specific task.
+
+Note: Kotlin has many special words with very specific meanings. As you learn to program in the Kotlin language, you will learn these words. They are often called keywords or reserved words.
+
+fun main:main is the name of this function. Functions have names, so they can be distinguished from each other. This function is called main, because it is the first, or main, function that is called when you run the program. Every Kotlin program needs a function named main.
+
+fun main():The function name is always followed by () two parentheses.Inside the parentheses, you can put information for the function to use. This input to the function is called "arguments" or args for short. You will learn more about arguments later.
+
+fun main() {}: Notice the pair of curly braces {} after the parentheses. Inside a function is code that accomplishes a task. These curly braces surround those lines of code.
+
+Look at the line of code between the curly braces:
+
+println("Happy Birthday!")
+
+This line of code prints the Happy Birthday! text.
+-println tells the system to print a line of text.
+-Inside the parentheses you put the text to be printed.
+-Notice that the text to be printed is surrounded by quotes. This tells the system that everything inside the quotation marks should be printed exactly as given.
+-To actually print the text, this whole println instruction has to be inside the main function.
+
+*So, there it is. The smallest Kotlin program.
+
+fun main() {
+    println("Happy Birthday!")
+}
+
+-----------------------
+4. Extend your program
+-----------------------
+
+-Print more than one message
+
+Great job! You printed one line of text using the println() function. However, you can put as many lines of instructions inside a function as you want or need to get a task accomplished.
+->Copy the line println("Happy Birthday!") and paste it two more times below it. Make sure your pasted lines are inside the curly braces of the main function.
+->Change one text to be printed to someone's name, say "Jhansi".
+->Change the other text to be printed to "You are 25!".
+
+Your code should look like the code below.
+
+fun main() {
+    println("Happy Birthday!")
+    println("Jhansi")
+    println("You are 25!")
+}
+
+-What would you expect this code to do when it runs?
+->Run your program to see what it does.
+->Go to the output pane, and you should see 3 lines printed in the console window, as shown below.
+
+Happy Birthday!
+Jhansi
+You are 25!
+
+->Making mistakes while programming is normal, and most tools will give you feedback to help you fix mistakes. In this step, create a mistake to see what happens.In your program, remove the quotes around the text Jhansi, so that line looks as shown below.
+
+println(Jhansi)
+->Run your program. You should see Jhansi printed in red, and an exclamation mark next to the line of code you changed, to show you where there is an error. Message with error exclamation mark
+->Look at the output pane. It shows a message with the same exclamation mark icon. What follows is a description of the error in your code.
+
+Message: Unresolved reference
+
+->This message, Unresolved reference: Jhansi, tells you what the system thinks is the error in the code. Even if you don't know what the error message means, you may be able to figure out what's wrong. In this case, you know that the println() instruction prints text. You learned earlier that the text has to be between quotes. If the text is not quoted, that is an error.
+->Go ahead and add the quotes back in.Run your program to make sure it works again.
+->Congratulations, you have run and changed your first Kotlin program
+
+-----------------
+5. Solution code
+----------------
+
+-This is the complete code of the program you worked on in this codelab.
+
+fun main() {
+    println("Happy Birthday!")
+    println("Jhansi")
+    println("You are 25!")
+}
+
+-----------
+6. Summary
+-----------
+->https://developer.android.com/training/kotlinplayground is an interactive code editor on the web where you can practice writing Kotlin programs.
+->All Kotlin programs need to have a main() function: fun main() {}
+->Use the println() function to print a line of text.
+->Place text you want to print between double quotes. For example "Hello".
+->Repeat the println() instruction to print multiple lines of text.
+->Errors are marked red in the program. There is an error message in the output pane to help you figure out where the error is and what might be causing it.
+
+--------------
+7. Learn more
+--------------
+->https://developer.android.com/training/kotlinplayground
+->Vocabulary for Android Basics in Kotlin
+
+------------------------
+8. Practice on your own
+------------------------
+Note: Practice problems are optional. They provide an opportunity for you to practice what you've learned in this codelab.
+
+Do the following:
+-Change the println() instructions to print().
+Run your program. What happens?
+Hint: The print() instruction just prints the text without adding a line break at the end of each string.
+-Fix the text so that each part of the message is on its own line.
+Hint: Use \n inside the text to add a line break. For example, "line \n break". Adding a line break changes the output as shown below.
+Hint: You can print an empty line by supplying no text: println("").
+Code:
+
+fun main() {
+    println("no line break")
+    println("")
+    println("with line \n break")
+}
+
+Output:
+
+no line break
+
+with line 
+ break
+
+Check your work:
+
+Here is one possible solution:
+
+fun main() {
+    print("Happy Birthday!\n")
+    print("Jhansi\n")
+    print("You are 25!")
+}
+
+
+--------------------------------------
+Create a birthday message in Kotlin
+--------------------------------------
+
+
