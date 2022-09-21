@@ -1,4 +1,43 @@
 Android Studio :Android Studio is the official Integrated Development Environment (IDE), for Android app development built and distributed by Google. It is a specialized workshop with tools to make it easy for software developers to use to design, build, run, and test apps for the Android platform. Android Studio uses IntelliJ IDEA as its foundation and includes the Android plugin pre-installed along with some tweaks specifically for the Android platform, so it will feel very familiar to you.
 Android:Android is an operating system (like Windows, Linux, or macOS) for smartphones and other devices such as tablets, wearables, TVs, and cars. You can run apps on Android like Phone, Messages, Gmail, Photos, and all your games.
 
-Verify system requirements
+-Verify system requirements
+On a Windows computer, you can find all the information you need to verify the system requirements in Settings.
+->Open Settings.
+Tip: You can use the Search tool next to the Start button at the bottom of your screen to locate it.
+->Click System.
+->At the bottom of the left-hand navigation pane, click About.
+->Make sure the Windows specifications meet or exceed the requirements.
+->Select Device specifications.
+->Make sure that the Installed RAM is at least as much as is required, and that the System Type is the 64-bit version of the operating system.
+->In the left-hand navigation, click Display.
+->Make sure the Resolution is the same or better than what is required.
+->In the left-hand navigation pane, click Storage.
+->Make sure that the Local storage has enough free space to install Android Studio.
+
+-Download Android Studio
+note: Although the look of the installation dialogs and icons may change with the different versions of Android Studio, the installation steps should basically remain the same.
+->Download the Android Studio installation file
+->Open any web browser and go to https://developer.android.com/studio.
+->This is the Android Developers site, where you can download Android Studio. This page automatically detects your operating system.
+->Click Download Android Studio. The Terms and conditions page with the Android Studio license agreement opens.
+->Read the license agreement.
+->At the bottom of the page, if you agree with the terms and conditions, check "I have read and agree with the above terms and conditions".
+->Click Download Android Studio for... to start the download.
+->When prompted, save the file to a location where you can easily locate it (for example, the Desktop or Downloads folder).
+->Wait for the download to complete. This may take a while, and may be a good moment to enjoy some tea!
+
+-Install Android Studio on Windows
+->Open the folder where you downloaded and saved the Android Studio installation file.
+->Double-click the downloaded file.
+->If you see a User Account Control dialog about allowing the installation to make changes to your computer, click Yes to confirm the installation.
+->The Welcome to Android Studio Setup dialog displays.
+->Click Next to start the installation.
+->Accept the default installation settings for all steps.
+->Click Finish when the installation is done to launch Android Studio.
+->Choose your preference of light or dark theme when Android Studio first launches.  
+->This may take some time, depending on your internet speed. So, you could go refill your tea cup!
+->During the installation, the setup wizard downloads and installs additional components and tools needed for Android app development. This may take some time depending on your internet speed. During this time, you may see a User Account Control dialog for Windows Command Processor. Click Yes to accept the dialog.
+->You may also receive a Windows Security Alert about adb.exe. Click Allow Access, if needed, to continue the installation.
+->When the download and installation completes, click Finish.
+->The Welcome to Android Studio window displays and you're ready to start creating apps! 
