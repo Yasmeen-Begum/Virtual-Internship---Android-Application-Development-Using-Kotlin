@@ -1,3 +1,7 @@
+------------------------------------
+Verifying the System specifications
+------------------------------------
+
 ![Screenshot (2563)](https://user-images.githubusercontent.com/91931504/191559669-fe171087-3f6d-44a1-9c8d-81c8541f7736.png)
 ![Screenshot (2564)](https://user-images.githubusercontent.com/91931504/191559705-92955180-9861-430f-91d9-bdb7cf854da1.png)
 ![Screenshot (2565)](https://user-images.githubusercontent.com/91931504/191559720-4f86353a-589e-4859-8e52-124dc1af2cb1.png)
@@ -7,6 +11,7 @@
 ------------------------------------
 Download and Install Andriod Studio
 ------------------------------------
+
 ![Screenshot (2568)](https://user-images.githubusercontent.com/91931504/191560423-f2ddab81-dd57-4765-90b9-6f52431ef063.png)
 ![Screenshot (2569)](https://user-images.githubusercontent.com/91931504/191560431-7e37bb27-1e81-4bd1-8776-a6f9a30d35e9.png)
 ![Screenshot (2570)](https://user-images.githubusercontent.com/91931504/191560435-e5b4a6ae-853c-4d1c-b19a-c4e74dbf0526.png)
@@ -37,3 +42,4 @@ Download and Install Andriod Studio
 ![Screenshot (2596)](https://user-images.githubusercontent.com/91931504/191563637-8e1e3955-3bc5-4f7d-867b-e190ea326229.png)
 ![Screenshot (2597)](https://user-images.githubusercontent.com/91931504/191563652-0c598c80-6c83-4145-941b-3eccc0961f63.png)
 ![Screenshot (2598)](https://user-images.githubusercontent.com/91931504/191563665-421ce338-aad4-4b42-9ddd-2810c10979b7.png)
+![Screenshot (2603)](https://user-images.githubusercontent.com/91931504/191564089-2c399e8d-a636-4012-856e-8227eb1e9e68.png)
