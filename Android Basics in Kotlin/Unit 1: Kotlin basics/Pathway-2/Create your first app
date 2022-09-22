@@ -1,5 +1,14 @@
+-------------------------------
+1.Introduction to Android Studio
+-------------------------------
+
 Android Studio :Android Studio is the official Integrated Development Environment (IDE), for Android app development built and distributed by Google. It is a specialized workshop with tools to make it easy for software developers to use to design, build, run, and test apps for the Android platform. Android Studio uses IntelliJ IDEA as its foundation and includes the Android plugin pre-installed along with some tweaks specifically for the Android platform, so it will feel very familiar to you.
 Android:Android is an operating system (like Windows, Linux, or macOS) for smartphones and other devices such as tablets, wearables, TVs, and cars. You can run apps on Android like Phone, Messages, Gmail, Photos, and all your games.
+
+
+------------------------------------
+2.Download and install Android Studio 
+-----------------------------------
 
 -Verify system requirements
 On a Windows computer, you can find all the information you need to verify the system requirements in Settings.
@@ -41,3 +50,150 @@ note: Although the look of the installation dialogs and icons may change with th
 ->You may also receive a Windows Security Alert about adb.exe. Click Allow Access, if needed, to continue the installation.
 ->When the download and installation completes, click Finish.
 ->The Welcome to Android Studio window displays and you're ready to start creating apps! 
+
+--------------------------------------
+3.Create and run your first Android app 
+--------------------------------------
+
+-Create your first app
+->In this task you'll create an Android app using a project template provided by Android Studio.
+->Project templates-In Android Studio, a project template is an Android app that has all the necessary parts, but doesn't do much. The purpose is to help you get started faster and save you some work. Some examples of templates in Android Studio are an app with a map, and an app with multiple screens.
+->Create an Empty Activity project
+->In these steps you'll create a new Android Studio project using the Empty Activity project template for your new app.
+->Start Android Studio (if it's not already open) by clicking the Android Studio icon:
+->The Welcome to Android Studio window opens. Click New Project.
+->The New Project window opens with a list of templates provided by Android Studio.
+->Click the tabs at the top and scroll through the templates to get an idea of what you could do! There are templates for many different types of devices (such as phones, tablets, and watches), and different types of apps (apps with scrollable screens, apps with maps, and apps with fancy navigation).
+->At the top left of the window, click the Phone and Tablet tab.
+->In the top row, click the Empty Activity template to select it as the template for your project.
+->The Empty Activity template is the simplest template that can be used to create an app. It has a single screen and displays a simple "Hello World!" message.
+->At the bottom of the window, click Next. The New Project dialog opens.
+->Configure your project as follows:
+-->Name is the name of your app. In the box below Name, enter Happy Birthday as the name for your project.
+-->Package name is the name used by the Android system to uniquely identify your app. Usually, this defaults to the name of your organization followed by the name of the app, all in lowercase (in this case "com.example.happybirthday").
+-->Save location is the location where all the files related to your project are saved. Take a note of where that is on your computer, so you can find your files. You can leave the save location also as is for now.
+-->Language defines which programming language you want to use for your project. Make sure the Language is Kotlin.
+-->Minimum SDK indicates the minimum version of Android that your app can run on. Select API 19: Android 4.4 (KitKat)from the dropdown list.
+-->Note: There are many different versions of the Android operating system, each of which is given a name in alphabetical order as it is relesed.
+-->Below Minimum SDK, notice the informational note on how many devices your app can run on with the chosen API level. If you are curious, click the Help me choose link to display a list of different versions of Android, as shown below. Then return to the New Project window.
+-->In the New Project window, make sure Use legacy android.support libraries is unchecked. Click the question mark if you want to know more about this.
+-->Click Finish.
+->Android Studio opens the project and all of its files.
+->When you first open Android Studio, you'll see three windows:
+(1) The Project window shows the files and folders of your project.
+(2) The Editing window is for editing code.
+(3) The What's New window shows news and useful tips.
+->In the bottom right corner of Android Studio a progress bar or message indicates whether Android Studio is still working on setting up your project. For example:
+->Wait until Android Studio has completed setting up your project. A message in the bottom left corner, like the one shown below, will let you know when the project is complete.
+
+-Run your app on a virtual device (emulator)
+->In this task, you'll use the Device Manager to create a software version (an emulator) of a mobile device and run it on your computer. A virtual device, or emulator, simulates the configuration for a particular type of Android device, such as a phone. This could be any phone or tablet running your choice of Android system versions. You'll then use the virtual device to run the app you created with the Empty Activity template.
+->Note: The Android Emulator is an independent application used to set up a virtual device, and it has its own system requirements. Virtual devices can use up a lot of disk space. If you run into any issues, see Run apps on the Android Emulator.
+->Create an Android virtual device (AVD)
+->The first step towards running an emulator on your computer, is to create a configuration for the virtual device.
+->From the Android Studio menu bar, select Tools > Device Manager.
+->Tip: You can also open the Device Manager by clicking the its icon  in the toolbar.
+->The Device Manager displays as shown below. (If you created a device previously, it will be listed here.)
+->Click Create device.
+->The Select Hardware window appears.
+->The Select Hardware window shows a list of pre-configured devices organized by Category that you can choose from. For each device, the table provides a column for its display size (Size), screen resolution in pixels (Resolution), and pixel density (Density).
+->Select Phone as the category.
+->Select a phone (for example, a Pixel 5), and then click Next. You can choose any phone, but for this codelab, choose a newer device.
+->The System Image window appears. From here, you choose the version of the Android system to run on your virtual device. This lets you test your app on different versions of the Android system.
+->From the Recommended tab, choose S as the version of the Android system to run on the virtual device. This was the latest version of Android at the time of writing, but you can choose any later stable version. Check here for a list of stable versions.
+->Note: If a Download link is visible next to a system image you want to use, that image is not installed on your computer. You must install the image before the virtual device can be configured.
+->To install a system image, click the Download link. Note that the download can take a long time, depending on your internet connection. Once the download is complete, click Finish.
+->Important: These Android system images use a lot of disk space, so only a few are part of your original installation. Many more versions of the Android system are available than are shown in the Recommended tab. To see them, look at the x86 Images and Other Images tabs.
+->Click Next.
+->The Android Virtual Device (AVD) window displays, from where you can choose additional configuration details for your device.
+->In the AVD Name field, enter a name for your Android Virtual Device. Leave the rest unchanged.
+->Click Finish.
+->Your new virtual device displays in the Device Manager window and is ready to use.
+->Run your app on the virtual device
+->If it is not already, bring Android Studio to the foreground.
+->In Android Studio, in the toolbar, find the virtual device dropdown menu (it will look similar to the example below), and then select the virtual device you created from the dropdown list. aaaf14d4bc7402c2.png (Or, click Run > Select Device.. and then select your virtual device from the available devices in the popup.)
+->In Android Studio, select Run > Run app, or click the Run icon on the toolbar. The virtual device starts and boots just like a physical device. Depending on the speed of your computer, this may take a bit of time.
+->When your app is ready, it opens on the virtual device.
+->Great job! Your virtual device is now up and running. Notice that the title is now "Happy Birthday", and that "Hello World!" is showing on the screen.
+
+-Find your project files
+->When you configured your project, Android Studio created a folder on your computer for all your Android projects called AndroidStudioProjects. Inside the AndroidStudioProjects folder, Android Studio also creates a folder with the same name as your app (HappyBirthday in this case).
+->The HappyBirthday folder is your project folder. Android Studio saves both the files you create and the files that are created by Android Studio in your project folder.
+->In Android Studio, look at the Project window on the left. The Project window shows the files and folders of your project.
+->Files in the Project window are organized to make navigation between the project files easier when you write code. However, if you look at the files in a file browser, such as Finder or Windows Explorer, the file hierarchy is organized very differently.
+->In this task you will explore these two different views of the project folder hierarchy.
+->In Android Studio, in the Project window, select Android from the drop-down menu in the top-left corner.
+->You should see a file listing similar to the following:
+->This view and organization of your files is useful when working on writing code for your project.
+->You can also view your files as they would appear in a file browser, such as Finder (for macOS) or Explorer (for Windows).
+->In the Project window, select Project Source Files from the drop-down menu.
+->Notice that the title changes to the folder where the project files are stored.
+->You can now browse the files in the same way as in any file explorer.
+->To switch back to the previous view, in the Project window, select Android again.
+->Great! Now you can create and run an app from a template, and you can find your project files.
+
+---------------------------------
+4.Run your app on a mobile device
+--------------------------------- 
+-Turn on USB debugging
+->To let Android Studio communicate with your Android device, you must enable USB debugging in the Developer options settings of the device.
+->To show developer options and enable USB debugging:
+--> On your Android device, open Settings, and search for About phone.
+-->Tap on About phone, and then tap Build number seven times. Enter your device password or pin, if prompted.
+-->Return to Settings, and tap System. Developer options should now appear in the list. You may need to open the Advanced options to find it.
+-->Tap Developer options, and then turn on USB debugging.
+
+-Install the Google USB Driver (Windows only)
+->If you've installed Android Studio on a Windows-based computer, you must install a USB device driver before you can run your app on a physical device.
+->Note: For Ubuntu Linux, follow the instructions in Run Apps on a Hardware Device documentation.
+->In Android Studio, click Tools > SDK Manager.
+->The Settings for New Projects window displays.
+->Click the SDK Tools tab.
+->Select Google USB Driver and click OK.
+->When done, the driver files are downloaded into the android_sdk/extras/google/usb_driver directory. You should now be able to connect and run your app from Android Studio.
+
+-Run your app on the Android device (all operating systems)
+->Now you can connect your device and run the app from Android Studio.
+->Connect the Android device to your development machine with a USB cable. A dialog should appear on the device, asking to allow USB debugging.
+->Select the Always allow option to remember this computer. Tap OK.
+->In Android Studio on your computer, make sure your device is selected in the dropdown. Click This is the Android Studio Run icon.
+->Select your device and then click OK.
+->Android Studio installs the app on your device and runs it.
+->Note: For Android Studio 3.6 and higher, the physical device is automatically selected when the device is connected with debugging turned on.
+->Note: If your device is running an Android platform that isn't installed in Android Studio, you might see a message asking if you want to install the needed platform. Click Install and Continue, then click Finish when the process is complete.
+
+-Troubleshooting
+->If your computer runs Linux or Windows, and you can't run your app on a physical Android device, see Run apps on a hardware device for additional steps.
+->If your computer runs Windows and the emulator installation doesn't work, see Install OEM USB Drivers for the appropriate USB driver for your device.
+->If Android Studio doesn't recognize your device, unplug the USB cable and plug it back in. Restart Android Studio.
+->If your computer still doesn't find the device or declares it unauthorized, disconnect the USB cable. Then on the device, tap Settings > Developer options > Revoke USB debugging authorizations. Reconnect the device to your computer. When prompted, grant authorizations.
+
+-----------------------------------
+5.Learn the basics of Android tests
+-----------------------------------
+
+-What is testing?
+->Testing, in the context of software, is a structured method of checking your software to make sure it works correctly. Automated testing is actual code that checks to ensure that another piece of code you wrote is working correctly.
+->Testing software is advantageous because it lets you weed out bugs before you release your code into the wild; it's essential to a positive user experience.
+->While manual testing almost always has a place, testing in Android can often be automated. Throughout the Android Basics in Kotlin course, you focus on automated tests to test the app code and the functional requirements of the app itself. In this codelab, you learn the very basics of testing in Android. In later codelabs, you learn more advanced practices of testing Android apps.
+->As you become familiar with Android development and testing Android apps, you should make it a regular practice to write tests alongside your app code. Creating a test every time you create a new feature in your app reduces your workload later as your app grows. It also provides a convenient way for you to make sure your app works properly without spending too much time manually testing your app.
+
+-Introduction to automated testing
+->An automated test is a piece of code that ensures another piece of code you have written is working correctly and continues to work correctly as your project continues to grow and change. Automated testing is an essential part of all software development and Android development is no exception. As such, there's no better time to introduce it than right now! When you created your first Android app, you probably saw that your main activity was located in a subfolder of the main directory. In the src directory, you may have also noticed the test and androidTest directories. These two directories are where test code is written. There are two types of automated tests in Android development: unit tests and instrumentation tests. The two directories represent these two categories of tests.
+->Find the unit-test code
+->Local tests in Android are located in the test directory and they're usually unit tests. Unit tests directly test a small piece of code to ensure it's functioning properly. With unit tests, you can test functions, classes, and properties. Local tests are executed on the Java Virtual Machine, which means they run in a development environment without needing a device or emulator. This is a fancy way of saying that unit tests run on your computer. Android Studio comes ready to run local tests automatically.
+->Android Studio automatically generates a simple unit test each time you create a new project. The same thing happens for instrumentation tests. It's important to note that these tests don't really do anything relevant. They only serve as a placeholder. For now, you're only going to go over where to find the test files. You dive into the content of these generated tests in a later pathway.
+->To find the unit-test code:
+-->Open the Birthday Card app from the previous project.
+-->If necessary, select Android from the navigation menu.
+-->Click app > java > com.example.happybirthday (test) > ExampleUnitTest.
+->Find the instrumentation-test code
+->In the context of Android Development, instrumentation test is the term for what is, usually, a user-interface test (UI test). Instrumentation tests let you test parts of an app that depend on activity and fragment lifecycles, and platform APIs and services.
+->Unlike unit tests, UI tests don't test code directly. Instead, they test the user interface to make sure that the correct UI components are displayed and that the user interface behaves as expected when actions are taken within the UI. Another difference is that all instrumentation tests must run on a physical device or emulator. In an earlier pathway, you set up an emulator, so this step is already taken care of.
+->When you run an instrumentation test on Android, what's really happening is that the test code is actually built into its own APK, just like a regular Android app. An APK is a compressed file that contains all the code and necessary files to run the app on a device or emulator. That test APK is installed on the device or emulator along with the regular app APK. The test APK then runs its tests against the app APK.
+->Before you run the test, take a look at what the code does.
+->To find the instrumentation-test code:
+-->If you're in the Android project view, click app > java > com.example.happybirthday (androidTest) > ExampleInstrumentedTest.
+-->If you're in the Project project view, click HappyBirthday > app > src > androidTest > java > com.example.happybirthday > ExampleInstrumentedTest.
+
+
